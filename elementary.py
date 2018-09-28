@@ -1,4 +1,5 @@
 #usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 ###
 #Name: Morgan Holve
@@ -9,6 +10,9 @@
 ###
 
 from scipy import constants as cs
+
+
+
 
 class Particle(object):
     """This class saves variables and attributes than an undefined particle would typically have""" 
