@@ -9,7 +9,7 @@
 #Assignment: CW5
 ###
 
-from scipy import constants as cs
+from scipy import constants
 
 
 
@@ -40,12 +40,12 @@ class Electron(ChargedParticle):
     """Creates a class for all particles that are electrons"""
     def __init__(self, x, y, z):
         """Sets values to match those of an electron"""
-        ChargedParticle.__init__(self, x, y, z, -cs.e)
-        self.mass = cs.m_e
+        ChargedParticle.__init__(self, x, y, z, -constants.e)
+        self.mass = constants.m_e
 
 class Proton(ChargedParticle):
     """Creates a class for all particles that are protons"""
     def __init__(self, x, y, z):
         """Sets attributes to match those of a proton"""
-        ChargedParticle.__init__(self, x, y, z, cs.e)
-        self.mass = cs.m_p
+        ChargedParticle.__init__(self, x, y, z, constants.e)
+        self.mass = constants.m_p
